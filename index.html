@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Will you be my Valentine?</title>
 
-  <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
   <style>
@@ -307,8 +306,7 @@
 
     /* LETTER BUTTON */
     .letter-btn {
-      margin-top: 25px;
-      margin-bottom: 10px;
+      margin: 25px auto 10px;
       padding: 14px 32px;
       background: linear-gradient(135deg, #ff3b7a, #ff6b9d);
       color: white;
@@ -562,26 +560,20 @@
 </head>
 
 <body>
-  <!-- FLOATING HEARTS BACKGROUND -->
   <div class="floating-hearts" id="floatingHearts"></div>
-
   <canvas id="confettiCanvas"></canvas>
 
-  <!-- BACKGROUND MUSIC - A Thousand Years -->
   <audio id="bgMusic" loop>
     <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_4c8c63d391.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- LETTER MUSIC (plays when letter opens) - Romantic Piano -->
   <audio id="letterMusic" loop>
     <source src="https://assets.mixkit.co/music/preview/mixkit-piano-reflections-643.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- MUSIC CONTROL BUTTON -->
   <button class="music-control" id="musicToggle" title="Toggle Music">🎵</button>
 
   <main class="card">
-    <!-- ANIMAL WITH HEART -->
     <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="fur" x1="0" x2="1">
@@ -593,30 +585,13 @@
           <stop offset="1" stop-color="#ff1f68"/>
         </linearGradient>
       </defs>
-
-      <path id="animatedHeart" d="M250 50 C250 33 270 25 282 38
-               C294 25 314 33 314 50
-               C314 78 282 92 282 106
-               C282 92 250 78 250 50Z"
-            fill="url(#heart)"/>
-
-      <path d="M90 120 C90 70 140 40 190 60
-               C240 40 290 70 290 120
-               C290 180 240 210 190 210
-               C140 210 90 180 90 120Z"
-            fill="url(#fur)"/>
-
+      <path id="animatedHeart" d="M250 50 C250 33 270 25 282 38 C294 25 314 33 314 50 C314 78 282 92 282 106 C282 92 250 78 250 50Z" fill="url(#heart)"/>
+      <path d="M90 120 C90 70 140 40 190 60 C240 40 290 70 290 120 C290 180 240 210 190 210 C140 210 90 180 90 120Z" fill="url(#fur)"/>
       <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"/>
       <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"/>
-
       <circle cx="160" cy="130" r="8"/>
       <circle cx="220" cy="130" r="8"/>
-
-      <path d="M190 144 C186 144 182 148 182 152
-               C182 160 190 164 190 170
-               C190 164 198 160 198 152
-               C198 148 194 144 190 144Z"
-            fill="#ff7aa2"/>
+      <path d="M190 144 C186 144 182 148 182 152 C182 160 190 164 190 170 C190 164 198 160 198 152 C198 148 194 144 190 144Z" fill="#ff7aa2"/>
     </svg>
 
     <h1>narayani will you be my valentine?</h1>
@@ -626,57 +601,40 @@
       <button id="noBtn">No</button>
     </section>
 
-    <!-- HINT -->
     <div class="hint" id="hint">"No" seems a bit shy 😈</div>
 
     <section class="result" id="result">
       <h2>YAY! 🎉💖</h2>
       <p class="romantic-message">You just made me the happiest person alive! ✨</p>
+      
+      <button class="letter-btn" id="openLetterBtn">Open My Letter For You 💌</button>
+
       <img
         class="fireworks"
         src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTc3ZGN5Z3BxMWQ3dXRlbzZpMzV5bnlqZGNnYjBmN3AzNWJkYm9rZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g5R9dok94mrIvplmZd/giphy.gif"
         alt="Celebration"
         onerror="this.style.display='none'"
       />
-      <button class="letter-btn" id="openLetterBtn">Open My Letter For You 💌</button>
     </section>
   </main>
 
-  <!-- LETTER OVERLAY -->
   <div class="letter-overlay" id="letterOverlay">
     <div class="letter-container">
       <div class="letter">
         <button class="close-letter" id="closeLetterBtn">×</button>
-        
         <div class="letter-header">
-          <h2>To My Dearest Narayani (My Baebu) 💖</h2>
+          <h2>To My Dearest Baebu 💖</h2>
           <p class="letter-date">Valentine's Day 2026</p>
         </div>
-
         <div class="letter-content">
           <p>My sweetu baebu💗,</p>
-
           <p>I just wanted to tell you that I've got this massive crush on youuuuuu👉🏻👈🏻, and everytime I see you or hear your voice it just makes me the most happiestttt person, Every single day I fall in love with you more and more, and i fall for you harder and harder every sinlge day, you were the single most missing piece in my life and having you by my side idk what to sayyyyyy baebuuuuu 🥹</p>
-
           <p>I asked to God to send me anything that would make me happy, but God had different plans ig, he not only just gave me anything, he gave me everything (ITS YOUUU)🥹🥹🥹</p>
-
-          <div class="photo-gallery">
-            <img src="WhatsApp_Image_2026-02-02_at_6_03_40_PM.jpeg" alt="Us together 1">
-            <img src="WhatsApp_Image_2026-02-02_at_6_06_46_PM.jpeg" alt="Us together 2">
-            <img src="WhatsApp_Image_2026-02-02_at_6_07_32_PM.jpeg" alt="Us together 3">
-            <img src="WhatsApp_Image_2026-02-02_at_6_08_20_PM.jpeg" alt="Us together 4">
-          </div>
-
           <p>All those late night calls and deep convos and silly jokes(yours) and genuine funny jokes(mine) hehehehhe😛😛 just kidding its the other way around lol🤓🤓 i'd do it again and again with you babyyyyy 💗</p>
-
           <p>I just don't have the words to describe how lucky I am to have you in my life babyyyyyyy😭🥹💗💗, I'm just obsessed with you babyyyyy, you are my good luck charm baebuu, being with you 24 hours is not enough, i wanna be with you for 25 hours or moreeeee😭😭😭😭😭</p>
-
           <p>I wanna giiggiii you, kissiii you and and and i miss you 24/7 you knowwww🥺🥺😭</p>
-
           <p><strong>I LOVE YOU MORE AND MORE AND MOREEEEE BABYYYYYYY AND I AM GOING TO FOREVERRR💗💗💗💗🥹🥹</strong></p>
-
           <p><strong>I'M ALWAYS GONNA BE THERE FOR YOU NO MATTER WHAT BAEBUUUU🫶🏻🫶🏻🫶🏻🫶🏻</strong></p>
-
           <p class="letter-signature">Forever yours,<br>Your biggest fan ❤️</p>
         </div>
       </div>
@@ -696,7 +654,6 @@
     const letterOverlay = document.getElementById("letterOverlay");
     const closeLetterBtn = document.getElementById("closeLetterBtn");
 
-    /* ---------- MUSIC CONTROL ---------- */
     let musicPlaying = false;
     let currentMusic = bgMusic;
 
@@ -714,7 +671,6 @@
 
     musicToggle.addEventListener("click", toggleMusic);
 
-    // Auto-play attempt (may be blocked by browser)
     document.addEventListener("click", () => {
       if (!musicPlaying) {
         bgMusic.play().catch(e => console.log("Music play failed:", e));
@@ -723,19 +679,14 @@
       }
     }, { once: true });
 
-    /* ---------- LETTER FUNCTIONALITY ---------- */
     openLetterBtn.addEventListener("click", () => {
       letterOverlay.classList.add("active");
-      
-      // Switch to letter music
       bgMusic.pause();
       letterMusic.currentTime = 0;
       letterMusic.play().catch(e => console.log("Letter music play failed:", e));
       currentMusic = letterMusic;
       musicPlaying = true;
       musicToggle.textContent = "🎵";
-      
-      // Extra confetti when letter opens
       setTimeout(() => {
         confettiInstance({
           particleCount: 100,
@@ -748,8 +699,6 @@
 
     closeLetterBtn.addEventListener("click", () => {
       letterOverlay.classList.remove("active");
-      
-      // Switch back to background music
       letterMusic.pause();
       bgMusic.currentTime = 0;
       bgMusic.play().catch(e => console.log("Background music play failed:", e));
@@ -758,14 +707,10 @@
       musicToggle.textContent = "🎵";
     });
 
-    // Close letter when clicking outside
     letterOverlay.addEventListener("click", (e) => {
-      if (e.target === letterOverlay) {
-        closeLetterBtn.click();
-      }
+      if (e.target === letterOverlay) closeLetterBtn.click();
     });
 
-    /* ---------- FLOATING HEARTS ---------- */
     function createFloatingHeart() {
       const heart = document.createElement("div");
       heart.className = "heart";
@@ -774,31 +719,23 @@
       heart.style.fontSize = (Math.random() * 20 + 15) + "px";
       heart.style.animationDuration = (Math.random() * 4 + 6) + "s";
       heart.style.animationDelay = Math.random() * 2 + "s";
-      
       document.getElementById("floatingHearts").appendChild(heart);
-      
       setTimeout(() => heart.remove(), 10000);
     }
 
-    // Create hearts periodically
     setInterval(createFloatingHeart, 800);
-    for (let i = 0; i < 5; i++) {
-      setTimeout(createFloatingHeart, i * 300);
-    }
+    for (let i = 0; i < 5; i++) setTimeout(createFloatingHeart, i * 300);
 
-    /* ---------- SPARKLE EFFECT ---------- */
     function createSparkle(x, y) {
       const sparkle = document.createElement("div");
       sparkle.className = "sparkle";
       sparkle.style.left = x + "px";
       sparkle.style.top = y + "px";
       sparkle.style.background = ["#ff3b7a", "#ffd700", "#fff", "#ff6b9d"][Math.floor(Math.random() * 4)];
-      
       document.body.appendChild(sparkle);
       setTimeout(() => sparkle.remove(), 1500);
     }
 
-    // Sparkles around the card
     setInterval(() => {
       const card = document.querySelector(".card");
       const rect = card.getBoundingClientRect();
@@ -807,9 +744,7 @@
       createSparkle(x, y);
     }, 500);
 
-    /* ---------- CONFETTI ---------- */
     const confettiCanvas = document.getElementById("confettiCanvas");
-
     function resizeConfettiCanvas() {
       const dpr = Math.max(1, window.devicePixelRatio || 1);
       confettiCanvas.width = Math.floor(window.innerWidth * dpr);
@@ -817,117 +752,61 @@
       confettiCanvas.style.width = "100vw";
       confettiCanvas.style.height = "100vh";
     }
-
     resizeConfettiCanvas();
     window.addEventListener("resize", resizeConfettiCanvas);
-    window.addEventListener("orientationchange", () => setTimeout(resizeConfettiCanvas, 150));
 
-    const confettiInstance = confetti.create(confettiCanvas, {
-      resize: false,
-      useWorker: true
-    });
+    const confettiInstance = confetti.create(confettiCanvas, { resize: false, useWorker: true });
 
-    // HEART-SHAPED CONFETTI
     function fullScreenConfetti() {
       const end = Date.now() + 2500;
       const colors = ['#ff3b7a', '#ff6b9d', '#ffd700', '#ff1f68', '#ffc0cb'];
-
       (function frame() {
-        confettiInstance({
-          particleCount: 8,
-          spread: 100,
-          startVelocity: 45,
-          ticks: 200,
-          origin: { x: Math.random(), y: Math.random() * 0.4 },
-          colors: colors,
-          shapes: ['circle', 'square'],
-          scalar: 1.2
-        });
-        
-        // Extra hearts
-        confettiInstance({
-          particleCount: 3,
-          spread: 80,
-          startVelocity: 35,
-          ticks: 180,
-          origin: { x: Math.random(), y: Math.random() * 0.3 },
-          colors: ['#ff3b7a', '#ff1f68'],
-          shapes: ['circle'],
-          scalar: 1.8
-        });
-        
+        confettiInstance({ particleCount: 8, spread: 100, startVelocity: 45, ticks: 200, origin: { x: Math.random(), y: Math.random() * 0.4 }, colors: colors, shapes: ['circle', 'square'], scalar: 1.2 });
+        confettiInstance({ particleCount: 3, spread: 80, startVelocity: 35, ticks: 180, origin: { x: Math.random(), y: Math.random() * 0.3 }, colors: ['#ff3b7a', '#ff1f68'], shapes: ['circle'], scalar: 1.8 });
         if (Date.now() < end) requestAnimationFrame(frame);
       })();
-
-      // BIG BURST
       setTimeout(() => {
-        confettiInstance({
-          particleCount: 400,
-          spread: 160,
-          startVelocity: 65,
-          ticks: 250,
-          origin: { x: 0.5, y: 0.5 },
-          colors: colors,
-          scalar: 1.5
-        });
+        confettiInstance({ particleCount: 400, spread: 160, startVelocity: 65, ticks: 250, origin: { x: 0.5, y: 0.5 }, colors: colors, scalar: 1.5 });
       }, 400);
     }
 
-    /* ---------- YES BUTTON GROWS ---------- */
     let yesScale = 1;
     function growYes() {
       yesScale = Math.min(2.2, yesScale + 0.1);
       yesBtn.style.transform = `translateY(-50%) scale(${yesScale})`;
     }
 
-    /* ---------- NO BUTTON RUNS AWAY ---------- */
-    function clamp(n, min, max) {
-      return Math.max(min, Math.min(max, n));
-    }
+    function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
 
     function moveNo(px, py) {
       const z = zone.getBoundingClientRect();
       const b = noBtn.getBoundingClientRect();
-
       let dx = (b.left + b.width / 2) - px;
       let dy = (b.top + b.height / 2) - py;
       let mag = Math.hypot(dx, dy) || 1;
-      dx /= mag;
-      dy /= mag;
-
+      dx /= mag; dy /= mag;
       let newLeft = (b.left - z.left) + dx * 150;
       let newTop  = (b.top - z.top) + dy * 150;
-
       newLeft = clamp(newLeft, 0, z.width - b.width);
       newTop  = clamp(newTop, 0, z.height - b.height);
-
       noBtn.style.left = newLeft + "px";
       noBtn.style.top = newTop + "px";
       noBtn.style.transform = "none";
-
       growYes();
     }
 
     zone.addEventListener("pointermove", e => {
       const b = noBtn.getBoundingClientRect();
-      const d = Math.hypot(
-        (b.left + b.width / 2) - e.clientX,
-        (b.top + b.height / 2) - e.clientY
-      );
+      const d = Math.hypot((b.left + b.width / 2) - e.clientX, (b.top + b.height / 2) - e.clientY);
       if (d < 140) moveNo(e.clientX, e.clientY);
     });
 
-    noBtn.addEventListener("click", e => e.preventDefault());
-
-    /* ---------- YES CLICK ---------- */
     yesBtn.addEventListener("click", () => {
       zone.style.display = "none";
       hint.style.display = "none";
       result.style.display = "block";
       resizeConfettiCanvas();
       fullScreenConfetti();
-      
-      // Extra celebration effects
       setTimeout(() => {
         for (let i = 0; i < 30; i++) {
           setTimeout(() => {
